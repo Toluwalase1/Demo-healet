@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
 
-const Openbar = ({ isOpen, isClose}) => {
+const Openbar = ({ isOpen, isClose}:{isOpen: boolean; isClose: ()=> void}) => {
 
     if(!isOpen){
         return;
